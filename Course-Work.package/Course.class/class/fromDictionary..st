@@ -1,7 +1,7 @@
 instance creation
 fromDictionary: aDictionary
-    | c |
-    c:= self new.
-    c title: (aDictionary at: 'title').
-    c description: (aDictionary at: 'short_summary').
-    ^ c
+
+    ^ self new
+		title: (aDictionary at: 'title');
+		description: (aDictionary at: 'short_summary');
+		yourself
